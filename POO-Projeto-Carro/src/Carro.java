@@ -2,8 +2,10 @@ public class Carro {
 
     // Declarando atributos
     int capacidadeTanque;
+    double DistanciaLitro; 
     String cor;
     String modelo;
+
 
     // Criando sobrecarga dos métodos
     Carro(){
@@ -11,10 +13,11 @@ public class Carro {
 
     }
 
-    Carro(String cor, String modelo, int capacidadeTanque){
+    Carro(String cor, String modelo, int capacidadeTanque, double DistanciaLitro){
         this.cor = cor;
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
+        this.DistanciaLitro = DistanciaLitro;
 
     }
     // Criando Métodos dos atributos
@@ -39,13 +42,23 @@ public class Carro {
 
     }
 
-    void setcapacidadeTanque(int capacidadeTanque){
+    void setCapacidadeTanque(int capacidadeTanque){
         this.capacidadeTanque = capacidadeTanque;
 
     }
 
-    int getcapacidadeTanque(){
+    int getCapacidadeTanque(){
         return capacidadeTanque;
+
+    }
+
+    void setDistanciaLitro(double DistanciaLitro){
+        this.DistanciaLitro = DistanciaLitro;
+
+    }
+
+    double getDistanciaLitro(){
+        return DistanciaLitro;
 
     }
 
